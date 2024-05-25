@@ -1,6 +1,6 @@
 localStorage.setItem('usuario',"desconectado");
 
-let versao_atual = "16051700"
+let versao_atual = "25051016"
 
 let versao_navegador = JSON.parse(localStorage.getItem('versao')) ?? "00000000"
 localStorage.setItem('versao',JSON.stringify(versao_navegador))
