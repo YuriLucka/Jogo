@@ -1,0 +1,105 @@
+body{
+    background-image: url(../images/sobre_background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.texto{
+    margin-left: 50px;
+    padding: 100px;
+    width: 80%;
+    padding: 30px;
+    background-image: url(../images/login_background.jpg);
+    color: white;
+    border: solid 1px white;
+    border-radius: 2px;
+    backdrop-filter: blur(10px);
+}
+
+
+.texto h1{
+    font-size: 24px;
+    text-align: center;
+}
+
+.texto p{
+    margin: 10px;
+    text-align: justify;
+}
+.texto ul{
+    margin: 20px 10px 10px 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.texto ul li{
+    color: var(--verde_claro);
+    list-style: inside;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.texto ul li img{
+    height: 50px;
+    border-radius: 50%;
+    border: solid 3px var(--verde);
+    cursor: pointer;
+    box-shadow: 0 0 15px 1px var(--verde);
+    animation: .8s pulsar infinite alternate;
+    transition: .2s;
+}
+
+.texto ul li img:hover{
+    scale: 1.4;
+    border-radius: 20%;
+    filter: blur(0px);
+    box-shadow: 0 0 10px 1px var(--laranja);
+    border: solid 3px var(--laranja);
+    animation: none;
+}
+.texto ul li img + span + span {
+    color: var(--laranja);
+    text-shadow: 0 1px 5px black;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-7px,-5px);
+    display: none;
+}
+.texto ul li img:hover + span{
+    color: var(--laranja);
+    text-shadow: 0 1px 5px black;
+}
+.texto ul li img:hover + span + span{
+    display: block;
+}
+#alien{
+    scale: 1;
+    height: 100px;
+    margin-left: 50px;
+    animation: giro 10s infinite linear;
+}
+
+@keyframes giro {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+    transform: scale(.4) rotate(180deg);
+    }
+    100% {
+    transform: scale(1) rotate(360deg);
+    }
+}
+@keyframes pulsar {
+    100%{
+        scale: 1.1;
+    }
+}

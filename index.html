@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css"> <!-- ESTILO DE RESET -->
+    <link rel="stylesheet" href="./styles/index.css"> <!-- ESTILO DA PAGINA -->
+    <link rel="icon" href="./images/Icon.png"> <!-- ICONE DO SITE -->
+    <script defer src="./js/temas.js"></script> <!-- SCRIPT DA PAGINA -->
+    <script defer src="./js/reset.js"></script> <!-- SCRIPT DE RESET -->
+    <title>Crewmate</title> <!-- NOME DA PAGINA -->
+</head>
+<body id="corpo">
+
+    <!-- MUSICA -->
+    <audio id="audio" src="./sound/som_tela_inicial.mp3" loop></audio>
+
+    <!-- CABEÇALHO DA PAGINA -->
+    <div class="cabecalho">
+        <!-- CONTEINER DA LOGO E DA MUSICA -->
+        <div class="campo_logo">
+            <a href="pages/inicio.html" target="iframe" id="inicio" onclick="temaInicio()" style="display: flex;">CREWMATE</a>
+            <i class="bi bi-volume-mute" onclick="playAudio()"></i><!-- ICONE DA MUSICA -->
+        </div>
+        <!-- MENU DE OPÇÕES -->
+        <ul id="menu_de_opcoes">
+            <li>
+                <a href="pages/novidades.html" target="iframe" class="opcoes_menu" id="novidades" onclick="temaNovidades()">Novidades</a>
+            </li>
+            <li>
+                <a href="pages/loja.html" target="iframe" class="opcoes_menu" id="loja" onclick="temaLoja()">Loja</a>
+            </li>
+            <li>
+                <a href="pages/sobre.html" target="iframe" class="opcoes_menu" id="sobre" onclick="temaSobre()">Sobre</a>
+            </li>
+            <li>
+                <a href="pages/suporte.html" target="iframe" class="opcoes_menu" id="suporte" onclick="temaSuporte()">Suporte</a>
+            </li>
+            <li>
+                <a href="pages/selecao.html" target="iframe" class="opcao_jogar" onclick="temaJogo()">Jogar</a>
+            </li>
+        </ul>
+        <div class="campo_login">
+            <ul class="dados_usuario_logado">
+                <li class="nick_usuario_logado">Nickname</li>
+                <li class="dinheiro_usuario_logado">0</li>
+            </ul>
+            <a href="pages/login.html" target="iframe" id="login" class="opcao_login" onclick="temaLogin(); deslogar()">Login</a>
+        </div>
+    </div>
+
+    <!-- CONTEUDO DA PAGINA, CONTÉM O IFRAME QUE CARREGARÁ AS PAGINAS  -->
+    <div class="conteudo">
+        <iframe src="pages/inicio.html" id="iframe" name="iframe"></iframe>
+    </div>
+
+    <!-- RODAPÉ DA PAGINA, CONTEM AS REDES SOCIAIS E INFORMAÇÕES -->
+    <div class="rodape">
+        <div class="item_rodape conteiner_politica_termos">
+            <a href="pages/politica_de_privacidade.html" onclick="cor_menu()" target="iframe" class="politica">
+                Política de Privacidade
+            </a>
+            <a href="pages/termos_de_servico.html" onclick="cor_menu()" target="iframe" class="termos">
+                Termos de serviço
+            </a>
+        </div>
+        <div class="item_rodape">
+            <p>
+                Crewmate |
+                <a href="mailto:crewmate_oficial@crewate.com" class="email">
+                    crewmate_oficial@crewate.com
+                </a>
+            </p>
+        </div>
+        <div class="item_rodape">
+            <a href="./pages/error.html" class="link_redes_sociais">
+                <img src="./images/icons/facebook.png" class="icone_redes_sociais" alt="Facebook">
+            </a>
+            <a href="./pages/error.html" class="link_redes_sociais">
+                <img src="./images/icons/twitter.png" class="icone_redes_sociais" alt="twitter">
+            </a>
+            <a href="./pages/error.html" class="link_redes_sociais">
+                <img src="./images/icons/instagram.png" class="icone_redes_sociais" alt="twitter">
+            </a>
+            <a href="./pages/error.html" class="link_redes_sociais">
+                <img src="./images/icons/youtube.png" class="icone_redes_sociais" alt="twitter">
+            </a>
+        </div>
+    </div>
+
+    <i class="bi bi-arrow-repeat"></i>
+</body>
+</html>

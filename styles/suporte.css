@@ -1,0 +1,100 @@
+body{
+    background-image: url(../images/suporte_background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+#notificacao{
+    font-weight: bolder;
+    color: #6de67d;
+    padding: 10px 0 0 0;
+    visibility: hidden;
+}
+
+.campo_de_login{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.label{
+    color: white;
+    font-weight: bolder;
+}
+
+.campo_email, .campo_usuario, .campo_mensagem{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 2px;
+    width: 250px;
+}
+
+.campo_botao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#enviar{
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-weight: bolder;
+    color: #181818;
+    background-color: var(--verde);
+    transition: .2s;
+}
+
+#enviar:hover{
+    background-color: var(--verde_claro);
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+#aviso{
+    margin-left: 50px;
+    display: flex;
+    width: 70%;
+    padding: 20px;
+    background-image: url(../images/login_background.jpg);
+    color: white;
+    border: solid 1px white;
+    border-radius: 2px;
+    backdrop-filter: blur(10px);
+}
+
+#aviso h1{
+    font-size: 24px;
+    text-align: center;
+}
+
+#aviso p{
+    margin: 10px;
+    text-align: justify;
+}
+
+.nome_do_jogo{
+    color: var(--verde_claro);
+}
+

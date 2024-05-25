@@ -1,0 +1,75 @@
+body{
+    background-image: url(../images/login_background.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#formulario{
+    background: linear-gradient(45deg,#141414,#292929,#141414);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.521);
+    display: flex;
+    gap: 50px;
+    padding: 30px;
+    margin-left: 100px;
+}
+
+.campo_de_login{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.label{
+    color: white;
+    font-weight: bolder;
+}
+
+.campo_email, .campo_usuario, .campo_senha{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo_botao, .campo_acessar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.campo_acessar a{
+    color: var(--verde);
+}
+
+#cadastrar{
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-weight: bolder;
+    color: #181818;
+    background-color: var(--verde);
+    transition: .2s;
+}
+
+#cadastrar:hover{
+    background-color: var(--verde_claro);
+}
+
+input{
+    padding: 10px;
+    border-radius: 2px;
+    width: 250px;
+    border: 2px solid #383838;
+}
+
+#notificacao{
+    margin-left: 100px;
+    padding: 10px;
+    color: #e66f6d;
+    visibility: hidden;
+    font-weight: bold;
+}

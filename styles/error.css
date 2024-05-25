@@ -1,0 +1,29 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(12, 48, 46);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_erro{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    max-width: 100%;
+}
+
+img{
+    height: 100%;
+}

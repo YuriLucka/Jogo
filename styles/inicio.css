@@ -1,0 +1,49 @@
+body{
+    background-image: url(../images/login_background.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container_textos{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo{
+    font-size: 70px;
+    font-weight: bolder;
+    color: white;
+}
+.subtitulo{
+    font-size: 20px;
+    color: white;  
+}
+
+.jogue_agora{
+    background-color: var(--verde);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: solid 5px var(--verde_claro);
+    transition: .2s;
+}
+
+.jogue_agora:hover{
+    scale: 1.1;
+    background-color: var(--laranja);
+    border: solid 5px var(--laranja);
+}
+
+.alien{
+    height: 100px;
+}
+

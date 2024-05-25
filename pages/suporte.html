@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css"> <!-- ESTILO DE RESET -->
+    <link rel="stylesheet" href="../styles/suporte.css"> <!-- ESTILO DA PAGINA -->
+    <script defer src="../js/suporte.js"></script> <!-- SCRIPT DA PAGINA -->
+    <title>Suporte</title> <!-- NOME DA PAGINA -->
+</head>
+<body>
+    <div id="aviso">
+        <div>
+            <h1>
+                Bem-vindo ao Suporte!
+            </h1>
+            <p>
+                Estamos aqui para ajudar a tornar sua experiência no jogo a melhor possível. Se você encontrou algum problema, tem alguma dúvida ou simplesmente deseja compartilhar suas sugestões ou insatisfações conosco, não hesite em entrar em contato! Nosso objetivo é resolver todos os problemas e ouvir todas as opiniões dos nossos jogadores.    
+            </p>
+            <p>
+                Para facilitar o processo de tratamento do seu ticket, por favor, forneça seu endereço de e-mail e nickname no formulário ao lado. Essas informações nos ajudarão a identificar você rapidamente e a oferecer uma resposta personalizada.
+            </p>
+            <p>
+                Não se preocupe, valorizamos sua privacidade e não compartilharemos suas informações com terceiros sem o seu consentimento.
+            </p>
+            <p>
+                Agradecemos por escolher nosso jogo e por nos ajudar a torná-lo ainda melhor! 
+            </p>
+            <p>
+                Equipe de Suporte do <b><span class="nome_do_jogo">Crewmate</span></b>.
+            </p>
+        </div>
+        <!-- FORMULARIO -->
+        <form id="formulario" autocomplete="off">
+            <span id="notificacao">Ticket Enviado!</span id="notificacao">
+            <div class="campo_email">
+                <label for="email" class="label">E-mail</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="campo_usuario">
+                <label for="usuario" class="label">NickName</label>
+                <input type="text" id="usuario" required>
+            </div>
+            <div class="campo_mensagem">
+                <label for="mensagem" class="label">Mensagem</label>
+                <textarea name="mensagem_cadastro" id="mensagem" cols="30" rows="4" placeholder="Escreva uma mensagem..." required></textarea>
+            </div>
+            <div class="campo_botao">
+                <button id="enviar">ENVIAR</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

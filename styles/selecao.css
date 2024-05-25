@@ -1,0 +1,97 @@
+body{
+    background-image: url(../images//sobre_background.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.container_skins {
+    display: grid;
+    overflow: auto;
+    height: 100%;
+    width: 70%;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    gap: 10px; /* Adiciona espaço entre as colunas */
+    padding: 10px;
+}
+.campo_skin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px;
+    background-image: url(../images/vidro.png);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.campo_skin:hover .skins{
+    scale: 1.1;
+}
+
+.skins{
+    width: 100%;
+    transition: .3s;
+}
+.container_personagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.campo_personagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow( 0px 0px 60px #47c04f);
+    padding: 5px;
+    animation: brilho 2s infinite alternate linear;
+}
+@keyframes brilho {
+    50%{
+        filter: drop-shadow( 0px 0px 60px #ffb731);
+    }
+    100%{
+        filter: drop-shadow( 0px 0px 60px #9cc047);
+    }
+}
+
+.skin_personagem{
+    height: 240px;
+    animation: mexendo 1s infinite alternate;
+}
+
+@keyframes mexendo {
+    100%{
+        transform: translate(0px,-5px);
+    }
+}
+
+#confirmar{
+    padding: 7px 15px;
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: var(--verde);
+    border: solid 2px black;
+    cursor: pointer;
+    visibility: hidden;
+    transition: .3s;
+    animation: pulsando .5s infinite alternate;
+}
+
+#confirmar:hover{
+    scale: 1.1;
+}
+
+@keyframes pulsando {
+    100%{
+        scale: 1.1;
+    }
+}
+

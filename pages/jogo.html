@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css"> <!-- ESTILO DE RESET -->
+    <link rel="stylesheet" href="../styles/jogo.css"> <!-- ESTILO DA PAGINA -->
+    <script defer src="../js/jogo.js"></script> <!-- SCRIPT DA PAGINA -->
+    <title>Jogo</title> <!-- NOME DA PAGINA -->
+</head>
+<body>
+    <!--     
+    fome: 50, // Nível de fome do Crewmate (0 a 100)
+    sono: 50, // Nível de sono do Crewmate (0 a 100)
+    saude: 100, // Nível de saúde do Crewmate (0 a 100)
+    felicidade: 50 // Nível de felicidade do Crewmate (0 a 100)
+    -->
+    <div class="conteudo">
+        <!-- Barra de status -->
+        <div class="container_lateral">
+            <h1>Status</h1>
+            <div class="container_status">
+                <p class="texto_status"><i class="bi bi-cup-hot"></i>Fome</i></p>
+                <div class="status border_fome">
+                    <div class="barra bar_fome"></div>
+                </div>
+                <p class="texto_status"><i class="bi bi-alarm"></i>Sono</p>
+                <div class="status border_sono">
+                    <div class="barra bar_sono"></div>
+                </div>
+                <p class="texto_status"><i class="bi bi-activity"></i>Saúde</p>
+                <div class="status border_saude">
+                    <div class="barra bar_saude"></div>
+                </div>
+                <p class="texto_status"><i class="bi bi-heart"></i>Felicidade</p>
+                <div class="status border_felicidade">
+                    <div class="barra bar_felicidade"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container_jogo">
+            <div class="jogo">
+                <img src="../images/assets/41.png" alt="personagem" id="jogador">
+            </div>
+            <div class="chat"></div>    
+        </div>
+        <div class="container_lateral">
+            <h1>Comandos</h1>
+            <div class="container_botoes">
+                <button class="botao" onclick="alimentarCrewmate()">Alimentar</button>
+                <button class="botao" onclick="dormirCrewmate()">Dormir</button>
+                <button class="botao" onclick="exercitarCrewmate()">Exercitar</button>
+                <button class="botao" onclick="passearCrewmate()">Passear</button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

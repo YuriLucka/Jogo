@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css"> <!-- ESTILO DE RESET -->
+    <link rel="stylesheet" href="../styles/login_novo.css"> <!-- ESTILO DA PAGINA -->
+    <script defer src="../js/login_novo.js"></script> <!-- SCRIPT DA PAGINA -->
+    <title>Entrar</title> <!-- NOME DA PAGINA -->
+</head>
+<body>
+    <p id="notificacao">Credenciais inválidas</p id="notificacao">
+    <!-- FORMULARIO -->
+    <form id="formulario" autocomplete="off">
+        <div class="campo_de_login">
+            <div class="campo_email">
+                <label for="email" class="label">E-mail</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="campo_usuario">
+                <label for="usuario" class="label">NickName</label>
+                <input type="text" id="usuario" pattern="[A-Za-z]{8,}" title="Mínimo de 8 letras, sem caracteres especiais, números ou espaços." required>
+            </div>
+            <div class="campo_senha">
+                <label for="senha" class="label">Senha</label>
+                <input type="password" id="senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?=.*[a-zA-Z]).{6,}" title="A senha deve ter pelo menos 8 caracteres, incluindo pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial" required>
+            </div>
+            <div class="campo_botao">
+                <button id="cadastrar">CADASTRAR</button>
+            </div>
+            <div class="campo_acessar">
+                <a href="login.html" id="acessar">Acessar</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

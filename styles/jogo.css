@@ -1,0 +1,196 @@
+body{
+    background-image: url(../images/sobre_background.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.conteudo{
+    display: flex;
+    flex: 1;
+    gap: 1%;
+    min-height: 100%;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: clamp(8px, 3vw, 2rem);
+}
+
+.container_lateral{
+    background-color: rgb(32, 32, 32);
+    border: solid 2px white;
+    padding: 1%;
+    display: flex;
+    gap: 4%;
+    flex-basis: 25%;
+    flex-direction: column;
+}
+
+.container_status{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.texto_status{
+    color: white;
+    font-size: clamp(15px, 1.3vw, 2rem);
+    font-weight: bolder;
+    padding-left: 5px;
+}
+.bi-cup-hot{
+    color: var(--fome_bar);
+    text-shadow: 0 0 10px var(--fome_bar),0 0 10px var(--fome_bar);
+    font-size: clamp(15px, 1.3vw, 2rem);
+    margin-right: 10px;    
+}
+.bi-alarm{
+    color: var(--sono_bar);
+    text-shadow: 0 0 10px var(--sono_bar),0 0 10px var(--sono_bar);
+    font-size: clamp(15px, 1.3vw, 2rem);
+    margin-right: 10px; 
+}   
+.bi-activity{
+    color: var(--saude_bar);
+    text-shadow: 0 0 10px var(--saude_bar),0 0 10px var(--saude_bar);
+    font-size: clamp(15px, 1.3vw, 2rem);
+    margin-right: 10px;
+}
+.bi-heart{
+    color: var(--felicidade_bar);
+    text-shadow: 0 0 10px var(--felicidade_bar),0 0 10px var(--felicidade_bar);
+    font-size: clamp(15px, 1.3vw, 2rem);
+    margin-right: 10px;
+}
+
+.status {
+    flex: 1;
+    border: solid 2px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.418);
+    margin-bottom: 4%;
+}
+
+.barra{
+    height: 100%;
+    filter: opacity(50%);
+    animation: 1s brilho infinite alternate ease-in-out;
+    transition: .5s;
+}
+
+@keyframes brilho {
+    100%{
+        filter: opacity(60%);
+    }
+}
+
+
+
+
+.bar_fome{
+    background-color: var(--fome_bar);
+    box-shadow: 0 0 10px var(--fome_bar);
+}
+.bar_sono{
+    background-color: var(--sono_bar);
+    box-shadow: 0 0 10px var(--sono_bar);
+}
+.bar_saude{
+    background-color: var(--saude_bar);
+    box-shadow: 0 0 10px var(--saude_bar);
+}
+.bar_felicidade{
+    background-color: var(--felicidade_bar);
+    box-shadow: 0 0 10px var(--felicidade_bar);
+}
+
+.border_fome{
+    border-color: var(--fome_bar);
+    box-shadow: inset 0 0 10px var(--fome_bar);
+}
+.border_sono{
+    border-color: var(--sono_bar);
+    box-shadow: inset 0 0 10px var(--sono_bar);
+}
+.border_saude{
+    border-color: var(--saude_bar);
+    box-shadow: inset 0 0 10px var(--saude_bar);
+}
+.border_felicidade{
+    border-color: var(--felicidade_bar);
+    box-shadow: inset 0 0 10px var(--felicidade_bar);
+}
+
+/* jogo */
+
+.container_jogo{
+    flex: 1;
+    border: solid 2px white;
+}
+
+.jogo{
+    height: 70%;
+    background-color: rgba(105, 105, 105, 0.705);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#jogador{
+    width: 40%;
+}
+
+.chat{
+    height: 30%;
+    background-color: rgb(29, 29, 29);
+    border-top: solid 2px white;
+    color: greenyellow;
+    font-size: clamp(8px, 5vw, 1rem);
+    overflow: auto;
+    text-align: justify;
+    padding: 2%
+}
+
+.container_botoes{
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+    height: 100%;
+    margin: 0 0 2% 2%;
+}
+
+.botao {
+    flex: 1;
+    background-color: rgb(61, 61, 61);
+    font-size: clamp(8px, 7vw, 1rem);
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: -4px 4px rgb(19, 19, 19), -6px 6px rgb(0, 0, 0),-7px 7px 3px rgb(0, 0, 0),inset 0 0 10px #161616;
+    color: greenyellow;
+    text-shadow: greenyellow 0px 0px 20px;
+    font-weight: bolder;
+    border: solid 2px black;
+}
+
+.botao:active{
+    box-shadow: inset -4px 4px 0 #0e0e0e, inset -5px 5px rgb(0, 0, 0), 0 0 3px rgb(0, 0, 0) , inset -6px 6px 3px rgb(0, 0, 0),inset -3px 3px 10px 2px #161616;
+    font-size: clamp(7px, 6vw, .97rem);
+    background-color: rgb(53, 53, 53);
+    color: greenyellow;
+    text-shadow: greenyellow 0px 0px 20px;
+    transform: translate(-6px,6px);
+}
+
+
+@media screen and (max-width: 950px) and (max-height: 450px){
+    .botao{
+        cursor: default;
+    }
+}

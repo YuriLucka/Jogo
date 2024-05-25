@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css"> <!-- ESTILO DE RESET -->
+    <link rel="stylesheet" href="../styles/login.css"> <!-- ESTILO DA PAGINA -->
+    <script defer src="../js/login.js"></script> <!-- SCRIPT DA PAGINA -->
+    <title>Entrar</title> <!-- NOME DA PAGINA -->
+</head>
+<body>
+    <p id="notificacao">Verifique sua senha e nome da conta e tente novamente.</p id="notificacao">
+    <!-- FORMULARIO -->
+    <form id="formulario" autocomplete="off">
+        <div class="campo_de_login">
+            <div class="campo_usuario">
+                <label for="usuario" class="label">Faça login com o nome da conta</label>
+                <input type="text" id="usuario" required>
+            </div>
+            <div class="campo_senha">
+                <label for="senha" class="label">Senha</label>
+                <input type="password" id="senha" required>
+            </div>
+            <div class="campo_botao">
+                <button id="logar" type="submit">ENTRAR</button>
+            </div>
+            <div class="campo_login_novo">
+                <a href="login_novo.html">Criar conta</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

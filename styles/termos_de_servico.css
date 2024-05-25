@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 100vh;
+    background: linear-gradient(90deg, white,rgb(238, 238, 238));
+    padding: 20px 30px;
+}
+
+h1{
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+h2{
+    font-size: 1.3em;
+    margin-top: 10px;
+}

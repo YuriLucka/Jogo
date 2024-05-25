@@ -1,0 +1,137 @@
+body{
+    background-image: url(../images/loja_background.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    filter: grayscale(60%);
+    z-index: -1;
+}
+
+.container_loja{
+    overflow: auto;
+    height: 100%;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+.loja{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.box{
+    border: solid 2px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.322);
+    backdrop-filter: blur(5px);
+}
+
+.box:hover .container_img img{
+    transform: scale(1.1);
+}
+
+.container_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_img img{
+    width: 100%;
+    transition: .3s;
+}
+
+
+.skin{
+    position: relative;
+    transition: .3s;
+}
+
+.skin:hover{
+    background-color: var(--laranja_claro);
+}
+
+.skin::after{
+    content: '$ 20';
+    color: black;
+    background-color: var(--laranja);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-weight: bolder;
+    border-top: solid 2px;
+}
+
+
+.comprado{
+    filter: opacity(60%) grayscale(80%);
+    position: relative;
+}
+.comprado::after{
+    content: 'ADQUIRIDO';
+    width: 100%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.575);
+    backdrop-filter: blur(10px);
+    border: solid 1px white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2.5vh;
+    font-weight: bolder;
+}
+
+.selecao{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.skin_selecionada{
+    filter: drop-shadow( 0px 0px 60px #ffb731);
+    max-height: 70vh;
+}
+
+#comprar{
+    padding: 7px 15px;
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: var(--verde);
+    border: solid 2px black;
+    cursor: pointer;
+    visibility: hidden;
+    transition: .3s;
+}
+
+#comprar:hover{
+    scale: 1.1;
+}
+
+#notificacao{
+    padding: 10px;
+    background-color: #e66f6d;
+    color: white;
+    visibility: hidden;
+    font-weight: bold;
+    border-radius: 5px;
+}

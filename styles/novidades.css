@@ -1,0 +1,92 @@
+body{
+    background-image: url(../images/novidades_background.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Isso mantém a imagem de fundo fixa */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    filter: grayscale(60%);
+    z-index: -1;
+}
+
+.noticias{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.box{
+    border: solid 2px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgb(44, 44, 44);
+}
+
+.container_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_img img{
+    transition: .3s;
+}
+
+
+.box:hover .container_img img{
+    transform: scale(1.1);
+}
+
+
+span{
+    font-weight: bolder;
+    color: var(--verde_claro);
+    text-decoration: underline;
+}
+
+p{
+    background-color: rgb(44, 44, 44);
+    color: white;
+    padding: 10px;
+}
+
+
+.naruto{
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+}
+.tanjiro{
+    background: linear-gradient(135deg, #34e89e, #0f3443);
+}
+.hunters{
+    background: linear-gradient(135deg, #c434e8, #5ee834);
+}
+.stormtrooper{
+    background: linear-gradient(135deg, #d6d6d6, #414141);
+}
+.dodge{
+    background: linear-gradient(135deg, #e8cd34, #433a0f);
+}
+.gelado{
+    background: linear-gradient(135deg, #34e8ca, #0f2e43);
+}
+.harry{
+    background: linear-gradient(135deg, #58e834, #0f430f);   
+}
+.vingadores{
+    background: linear-gradient(135deg, #102585, #e84f34);   
+}
